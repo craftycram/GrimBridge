@@ -34,7 +34,6 @@ dependencies {
     implementation(project(":common"))
     implementation(project(":spigot"))
     implementation(project(":velocity"))
-    implementation(project(":bungee"))
 }
 
 tasks.test {

@@ -10,11 +10,14 @@ repositories {
         name = "sonatype"
         url = "https://oss.sonatype.org/content/repositories/snapshots/"
     }
-    maven { url = uri("https://jitpack.io/") }
+    maven {
+        name = "grimacSnapshots"
+        url = uri("https://repo.grim.ac/snapshots")
+    }
 }
 
 dependencies {
     implementation(project(":common"))
-    compileOnly 'com.github.grimanticheat:grimapi:05e31d62f2'
-    compileOnly 'org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT'
+    compileOnly("ac.grim.grimac:GrimAPI:1.2.0.0")
+    compileOnly 'org.spigotmc:spigot-api:1.21.10-R0.1-SNAPSHOT'
 }

@@ -1,2 +1,2 @@
 rootProject.name = "GrimBridge"
-include("common", "spigot", "bungee", "velocity")
+include("common", "spigot", "velocity")
